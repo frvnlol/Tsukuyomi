@@ -13,7 +13,7 @@ const {
 router.route('/').get(getUsers).post(createUser);
 
 // Get Single User, Update User, and Delte User
-router.route('/:id').get(getSingleUser).put(updateUser).delete(deleteUser);
+router.route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
 
 
 module.exports = router;
