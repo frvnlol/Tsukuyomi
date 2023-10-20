@@ -46,6 +46,7 @@ module.exports = {
         { $set: req.body },
         { runValidators: true, new: true }
       );
+      res.json({ message: 'User successfully updated! '})
     } catch (err) {
       res.status(500).json(err);
     }
